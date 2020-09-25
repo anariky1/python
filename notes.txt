@@ -1,0 +1,31 @@
+python.org
+Downloads
+Install python ver 3
+Add python 3.8 to PATH - Select this option
+Click install now
+
+Enter cmd
+type python - you get 3 arrows
+or
+py -3
+
+install editor
+code.visualstudio.com
+download for windows
+Run exe - select all options in additional tasks
+click install
+
+File->Preferences->Settings->Work bench->Appearance->Color theme->Visual studio light
+Terminal->New Terminal->Type python and hit enter
+you will see >>>
+
+go to e : 
+cd python_2020
+python basics.py
+python
+import datetime
+datetime.datetime.now()
+
+
+
+

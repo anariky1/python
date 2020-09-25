@@ -1,0 +1,3 @@
+monday_temperatures=[9.1,8.8,5.5]
+monday_temperatures.append(4.2)
+print(monday_temperatures)

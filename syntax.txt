@@ -1,0 +1,656 @@
+python program
+------------------------------------
+how to get date time
+
+import datetime
+datetime.datetime.now()
+print(datetime.datetime(2020, 7, 11, 23, 23, 35, 60985))
+
+//if ypu want to print in sme line
+print("The date and time is: ",datetime.datetime.now())
+------------------------------------------------
+
+to run the file
+go to folder e:python_2020
+python basics.py
+will give the result
+-------------------------------------
+
+myNumber=3;
+myText="Ananth"
+print(myNumber,myText,3)  -- you can have any number of arguments
+3,"Ananth,3
+
+-----------------------
+x=10
+y="10"
+z=10.1
+sum1=x+x
+sum2=y+y
+print(sum1,sum2)
+print(type(x),type(y),type(z))
+Ans
+3 Ananth 3
+20 1010
+<class 'int'> <class 'str'> <class 'float'>
+
+important Note = '10' - is also string
+-------------------------------
+
+This is wrong
+int a=10
+String b=10
+sum3=a+a
+sum4=b+b
+print(sum3,sum4)
+------------------------------
+
+Another example:
+x = 2
+y = 4
+z = 6
+s = x+y+z
+print(s)
+===================================
+
+List
+students_grades=[9.1,8.8,7.5]
+print(list(range(1,10)))
+Ans:[1, 2, 3, 4, 5, 6, 7, 8, 9]  -Note that 10 is not included in the list. The generated list always runs up to one number before the upper number.
+print(list(range(1,10,2)))
+[1, 3, 5, 7, 9]
+Other way
+a=list(range(11,20,2))
+print(a)
+[11, 13, 15, 17, 19]
+
+rainfall = [1.2,2,"A",[1,2,3]] - list should contain 4 items - float,integer,string,list
+
+===================================
+
+how to check list attributes
+go to terminal 
+right side - click on window symbol
+go to proj folder
+e: python_2020
+python list.py
+type python and hit enter
+>>> dir(list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', 
+'__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', 
+'__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', 
+'__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 
+'insert', 'pop', 'remove', 'reverse', 'sort']  
+>>> 
+
+
+
+dir(str)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', 
+'__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', 
+'__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
+'__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 
+'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 
+'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 
+'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 
+'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 
+'title', 'translate', 'upper', 'zfill'] 
+     
+>>> 
+
+
+dir(int)
+>>> dir(int)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', 
+'__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', 
+'__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', 
+'__int__', '__invert__', 
+'__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', 
+'__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', 
+'__rmul__', '__ror__', '__round__', 
+'__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', 
+'__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'as_integer_ratio', 
+'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> 
+
+help(str.upper)
+upper(self, /)
+    Return a copy of the string converted to uppercase.
+
+orignial example-------------------------
+print("hello".upper())
+
+help(str.title())------------------
+ More specifically, words start with uppercased characters and all remaining
+    cased characters have lower case.
+=====================================
+
+how to coverage average in list
+
+There are built in functions
+dir(__builtins__)
+['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 
+'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 
+'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 
+'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 
+'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None',
+ 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning',
+ 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning',
+ 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 
+'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 
+'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError', '_', '__build_class__', 
+'__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 'abs', 'all', 'any', 'ascii', 
+'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 
+'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr',
+ 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map',
+ 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr',
+ 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
+===========================================
+
+take average of list items
+students_grades=[9.1,8.8,7.5]
+mySum=sum(students_grades)  // sum - got from built in functions
+avg=mySum/3
+print(avg)
+============
+
+find max number in list
+student_grades = [9.1, 8.8, 7.5]
+max_value = max(student_grades)
+print(max_value)
+============
+how to find the count of 10.0
+student_grades = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
+print(student_grades.count(10.0))
+##################
+Convert string to lower
+username = "Python3"
+print(username.lower())
+
+#####################
+
+dictionary
+
+dir(dict)
+['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', 
+'__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', 
+'__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', 
+'__reduce_ex__', '__repr__', '__reversed__', '__setattr__', '__setitem__', '__sizeof__', '__str__',
+ '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+
+
+average of dictionary
+student_grades={"Ananth": 9.1 , "Priya" :8.8 , "Kirithik" :7.5}
+mysum=sum(student_grades.values())
+length=len(student_grades)
+average=mysum/3
+print(average)
+
+#######################
+List are mutables monday_temperatures=[1,4,5] - You can add more items to list using append & remove
+
+Tuples are immutable monday_temperatures=(1,4,5) - You cannot append / remove - 
+
+create a color_code variable and assign a tuple to it . the tuple should contain 3 tuple at iesm
+color_codes=((1,2,3),(4,5,6),(7,8,9))
+########################
+
+clear window - left side - clear
+clear window - right side - control l
+exit() take u back to folder directory
+###########################
+def mean(myList):
+    the_mean=sum(myList)/len(myList)
+    return the_mean
+
+
+monday_temp=[1,2,3]
+print(mean(monday_temp))
+
+if there id sno return , you reurn none
+##########################
+
+if condition
+
+student_grades={"Ananth": 9.1 , "Priya" :8.8 , "Kirithik" :7.5}
+print(mean(student_grades))
+
+x = 1
+y = 1
+ 
+if x == 1 and y==1:
+    print("Yes")
+else:
+    print("No")
+
+x = 1
+y = 1
+ 
+if x == 1 or y==2:
+    print("Yes")
+else:
+    print("No")
+#############
+
+if isinstance(x, int) or isinstance(x, float) or x=='1':
+    print("Valid type!")
+else:
+    print("Not valid!")
+###################
+if(1>3):
+    print("smaller")
+else:
+    print("greater")
+
+
+x=3
+y=7
+if x>y:
+    print("x is greater than y")
+elif x==y:
+    print ("x is equal to y")
+else:
+    print("x is less than y")
+
+def weather_condition(temperature):
+    if temperature>7:
+        return "Warm"
+    else:
+        return "Cold"
+
+user_input=float(input("Enter temperature: "))
+print(type(user_input),user_input)
+print(weather_condition(user_input))
+
+###############################################
+
+user input
+user_input=input("Enter your name: ")
+#message="Hello %s!" %user_input
+message=f"Hello {user_input}!"
+print(message)
+
+
+name=input("Enter your name: ")
+surname=input("Enter your surname: ")
+when="today"
+#message="Hello %s %s!" %(name ,surname)
+message=f"Hello {name}{surname}!. Whats up {when}"
+print(message)
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+ 
+for key, value in phone_numbers.items():
+    print("{} has as phone number {}".format(key, value))
+##########################################
+for loop
+
+for letter in 'hello':
+    print(letter.title())
+
+monday_temperatures=[9.1,8.8,7.6]
+
+for temperature in monday_temperatures:
+    print(round(temperature))
+
+
+colors = [11, 34, 98, 43, 45, 54, 54]
+
+for color in colors:
+    print(color)
+
+#######################################3
+
+print big colors
+
+colors = [11, 34, 98, 43, 45, 54, 54]
+
+for color in colors:
+    if color>50:
+        print(color)
+########################3
+
+print color only if integer
+
+colors = [11, 34.1, 98.2, 43, 45.1, 54, 54]
+
+for color in colors:
+    if(type(color)==int):
+        print(color)
+
+#########################
+print colors only if it is int and > 50 
+colors = [11, 34.1, 98.2, 43, 45.1, 54, 54]
+
+for color in colors:
+    if (type(color)==int and color>50):
+        print(color)
+
+#######################
+
+one way looping dictionary 
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+ 
+for key, value in phone_numbers.items():
+    print("{} has as phone number {}".format(key, value))
+
+
+other way:
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+for key, value in phone_numbers.items():
+   print("%s: %s" %(key ,value))
+
+
+########################################
+
+while loop
+a=4
+
+while a>3:
+    print(a) #4 will be printed infinity times
+
+username=''
+
+while username != "python":
+    username=input("Enter username:")
+
+####################
+
+List comprehension
+
+def printNumbers(myList):
+    new_temps=[temp for temp in myList if type(temp)!=str]
+    return new_temps #this will return only integers and not string
+
+
+print(printNumbers([1,2,'A']))
+
+#Another Method
+def foo(lst):
+    return [i for i in lst if not isinstance(i, str)]
+
+print(foo([3,2,5,'a']))
+
+
+
+def myList(list):
+    new_list=[i if not isinstance(i, str) else 0 for i in list]
+    return new_list
+print(myList([1,2,'A']))
+
+
+
+def sumStrings(myList):
+   return sum([float(i) for i in myList])
+
+print(sumStrings(['1.2','1.5','1.3']))
+###################################################
+
+temps=[221,220,340,230]
+
+new_temps=[]
+for temp in temps:
+    new_temps.append(temp/10)
+
+print(new_temps)
+
+#Another way
+new_temps1=[temp/10 for temp in temps]
+print(new_temps1)
+
+print("remove -9999")
+temps2=[221,220,-9999,230]
+new_temps2=[temp/10 for temp in temps2 if temp!=-9999]
+print(new_temps2)
+
+#I want to print 0 instead of -9999 - the below syntax is wrong
+#temps3=[221,220,-9999,230]
+#new_temps3=[temp/10 for temp in temps if temp!=-9999 else 0]
+#print(new_temps3)
+
+#I want to print 0 instead of -9999 - the below is correct syntax
+temps4=[221,220,-9999,230]
+new_temps4=[temp/10  if temp!=-9999 else 0 for temp in temps4]
+#if temp is <> -9999 , put in new_temp4 , else replace -9999 with 0
+print(new_temps4)
+# for loop is at very end 
+##################################3
+
+print takes indefinite number of arguments
+print(a,b,c,d)
+
+Function
+def mean(myList):
+    the_mean=sum(myList)/len(myList)
+    return the_mean
+
+
+monday_temp=[1,2,3]
+print(mean(monday_temp))
+
+
+def area(a,b):
+    print(b)
+    print(a)
+    return a*b
+
+#print(area(3,4))
+# non keyword arguments
+
+print(area(b=3,a=4)) #keyword argumments
+
+# method 2
+def area_parameter(a,b=6):
+#def area_parameter(b=6 ,a): #syntax is wrong - Non default argument follows default argument - non assigned should be
+                             #first argument
+    return a*b
+
+print(area_parameter(3))  # you are passing only one argument thpugh there are 2 parameters
+print(area_parameter(3,b=7))   # b will be 7
+
+def mean(*args):
+   # return type(args)
+   return sum(args)/len(args)
+
+
+print(mean(1,2,3))
+
+#########################
+
+function with multiple arguments
+
+def mean(*args):
+   # return type(args)
+   return sum(args)/len(args)
+
+
+print(mean(1,2,3))
+
+
+
+def print_Strings(*args):
+    sorted_list=[i.upper() for i in args]
+    return sorted(sorted_list)
+
+
+print(print_Strings('snow','glacier','iceberg'))
+
+#keyword arguments
+
+def mean(**kwargs):
+    return kwargs
+print(mean(a=1,b=2,c=3))
+#you get dictionary {'a': 1, 'b': 2, 'c': 3}
+
+#this will returm sum 9
+def find_sum(**kwargs):
+    return sum(kwargs.values())
+    
+print(find_sum(a=6,b=3))
+#################################
+
+
+# \n break line
+myFile=open("fruits.txt")
+#print(myFile.read())
+#print(myFile.read())  #this will not read twice , tuis will create empty space
+
+content=myFile.read()
+myFile.close()
+print(content)
+print(content)
+
+# x is used to create new file and write text
+#with open("fruits.txt","x") as myFile:
+    #myFile.write("okra")
+
+with open("fruits.txt","a") as myFile:
+    myFile.write("\nokra")
+    #content=myFile.read() you cannot read ,coz you have given the parameter as a which is append
+#print(content)
+
+#to append and read at the same time
+print("**************read file")
+with open("fruits.txt","a+") as myFile:
+    myFile.write("\nokra")
+    myFile.seek(0) #since the cursor will be in last position , there is no content to read , so u r going to 0 position
+    content=myFile.read()
+print(content)
+
+#################################3
+
+File reading exercises
+with open("fruits.txt","r") as myFile:
+    content=myFile.read()    
+    myFile.close() #not mandatory , with keyword will take care of closing the file automatically
+print(content)
+
+with open("fruits.txt") as myFile:
+    content=myFile.read()    
+print(content)
+
+
+with open("vegetables.txt","w") as myFile:
+    myFile.write("tomato\ncucumber\nOnion")  
+    myFile.write("Garlic")  #immediately after onion , there is no spaec , you will see garlic
+print(content)
+
+#Read first 90 characters in a file
+with open("bear.txt","r") as myFile:
+    content=myFile.read()    
+print(content[:90])
+
+#count no of characters in a file
+def countOccurances(ch,filePath="bear.txt"):
+    myFile=open(filePath)
+    content=myFile.read()
+    return content.count(ch)
+
+#create a file file.txt and write text snail
+with open("file.txt","w") as myFile:
+    myFile.write("snail") 
+
+#read first 90 characters from bear.txt and paste in first.txt
+with open("bear.txt","r") as myFile1:
+    content=myFile1.read()
+with open("first.txt","w") as myFile2:
+    myFile2.write(content[:90])
+
+#copy the content of bear1 text and append to bear 2
+with open("bear1.txt","r") as myFile1:
+    content=myFile1.read()
+with open("bear2.txt","a") as myFile2:
+    myFile2.write(content)
+
+# read the content of read1.txt and append at end to same file again 2 times
+with open("read1.txt","a+") as myFile1:
+    content=myFile1.read()
+    myFile1.write(content)
+    myFile1.write(content)
+###########################################
+import sys
+sys.builtin_module_namesstrtstart 
+import time
+dir(time)
+help(time.sleep)
+time.sleep(3)
+
+
+import os
+import sys
+sys.prefix -- this will give os path
+go to terminal -> 
+initially it will be >>>
+exit()
+start path(withoutt ' ')
+this will open directory
+dir(os)
+os.path.exist("file path")
+#####################
+Built in modules
+
+username='pypypy'
+print(len(username))
+print(username.count('p'))
+
+#this will read infinity times and print the content infinity times
+#while True:
+   # with open("vegetables.txt") as file:
+      #  print(file.read())
+        # control+c to terminate
+
+#there is no built in function to terminate
+import time
+import os
+
+while True:
+   if os.path.exists("vegetables.txt"):
+        with open("vegetables.txt") as file:
+          print(file.read())
+   else:
+        print("file doesnt exist")
+   time.sleep(10)
+
+#############################
+Third party modules 
+
+installing pandas
+---------------
+go to project folder (below screen)
+pip install pandas
+
+
+import time
+import os
+import pandas
+
+while True:
+   if os.path.exists("temps_today.csv"):
+        data=pandas.read_csv("temps_today.csv")
+        print(data.mean()["st1"])
+   else:
+        print("file doesnt exist")
+   time.sleep(10)
+
+this will print the sum and average of columns
+##############################
+
+
+    closest match
+>>> import difflib
+>>> from difflib import SequenceMatcher
+>>> SequenceMatcher(None,"rainn","rain")
+<difflib.SequenceMatcher object at 0x01D8FF88>
+>>> SequenceMatcher(None,"rainn","rain").ratio()
+0.8888888888888888
+>>>
+>>> from difflib import get_close_matches
+>>> help(get_close_matches)
+Help on function get_close_matches in module difflib:
+
+get_close_matches(word, possibilities, n=3, cutoff=0.6)
+>>> get_close_matches("rain",["pyramid","rainn","help"])
+['rainn']
+>>> get_close_matches("rain",["pyramid","rainn","help"],n=3,cutoff=0.6)
+['rainn']
+>>>
